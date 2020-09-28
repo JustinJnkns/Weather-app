@@ -16,13 +16,18 @@
     <main class="container-fluid">
         <div class="row">
             <!--column with city search and responses -->
-            <div class="col-md-3 bg-light">
+            <div id="search-column" class="col-md-3 bg-light">
                 <div class="card 100vw">
-                    <h3 class="card-header">Search By City</h3>
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <h3 class="card-header">Search For A City:</h3>
+                    <form id="search-form" class="card-body">
+                    <input id='city-search'class="form-control" type="text" placeholder="Search" aria-label="Search" class="form-input" >
+                    <button type="submit" class="btn bg-dark"></button>
+                    </form>
                 </div>
             </div>
+            <div id="weather-data"class="col-md bg-light">
 
+            </div>
         </div>
     </main>
 
@@ -64,5 +69,6 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
